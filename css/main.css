@@ -1,0 +1,41 @@
+
+#body {
+	background-image: url("../images/romeo-juliet1.png");
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+.row {
+	padding: 15px;
+	display: flex;
+}
+
+.website-title {
+	padding: 40px;
+}
+
+.bungee {
+	font-family: 'Share Tech Mono', monospace;
+	font-weight: bold;
+}
+
+.col-md-4 {
+	flex: 1;
+	border-style: double;
+	padding: 1em;
+}
+
+
+.white {
+	background-color: white;
+	margin: 2px;
+}
+
+.footer {
+	padding: 1em;
+	border-style: double;
+}
+
+.float {
+	margin: 1px;
+}
