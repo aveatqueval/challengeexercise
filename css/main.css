@@ -39,3 +39,15 @@
 .float {
 	margin: 1px;
 }
+
+h1 {
+	color: #8B4513; 
+	font-family: 'Monotype corsiva';
+	font-size: 50px;
+}
+
+h2 {
+	color: 	#FFA07A; 
+	font-family: 'Monotype corsiva';
+	font-size: 30px;
+}
