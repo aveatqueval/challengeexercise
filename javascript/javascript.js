@@ -3,8 +3,6 @@ function select1change() {
     "url("+document.getElementById("select1").value+")";
 }
 
-
-<script>
 document.getElementById('links').onclick = function (event) {
     event = event || window.event;
     var target = event.target || event.srcElement,
@@ -13,9 +11,8 @@ document.getElementById('links').onclick = function (event) {
         links = this.getElementsByTagName('a');
     blueimp.Gallery(links, options);
 };
-</script>
 
-<script>
+
 blueimp.Gallery(
     document.getElementById('links').getElementsByTagName('a'),
     {
@@ -23,5 +20,3 @@ blueimp.Gallery(
         carousel: true
     }
 );
-</script>
-
