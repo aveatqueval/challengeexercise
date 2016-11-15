@@ -1,78 +1,184 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
-	<link href='css/bootstrap.css' rel='stylesheet'>
-  	<link href='css/bootstrap.min.css' rel='stylesheet'>
-  	<link href='css/main.css' rel='stylesheet'>
-  	<link href='http://fonts.googleapis.com/css?family=Share+Tech+Mono' rel='stylesheet' type='text/css'>
-  	<script src="javascript/javascript.js"></script>
+  <title>SYSTEMS - always aim for better</title>
+  <link href='css/bootstrap.css' rel='stylesheet'>
+  <link href='css/bootstrap.min.css' rel='stylesheet'>
+  <link href='css/main.css' rel='stylesheet'>
+  <link href='http://fonts.googleapis.com/css?family=Share+Tech+Mono' rel='stylesheet' type='text/css'>
+  <script src="javascript/javascript.js"></script>
 </head>
-<body>
-	<div id="menu">
-		<h1 align="center">Our Menu</h1>
-		<table class="table">
-			<tr>
-				<th>Appetizers</th><th></th>
-			</tr>
-			<tr>
-				<td></td><td></td>
-			</tr>
-			<tr>
-				<td></td><td></td>
-			</tr>
-			<tr>
-				<td></td><td></td>
-			</tr>
-			<tr>
-				<td></td><td></td>
-			</tr>
-			<tr>
-				<td></td><td></td>
-			</tr>	
-			<tr>
-				<th>Mains</th><th></th>
-			</tr>					
-			<tr>
-				<td></td><td></td>
-			</tr>
-			<tr>
-				<td></td><td></td>
-			</tr>
-			<tr>
-				<td></td><td></td>
-			</tr>
-			<tr>
-				<td></td><td></td>
-			</tr>
-			<tr>
-				<td></td><td></td>
-			</tr>
-			<tr>
-				<td></td><td></td>
-			</tr>
-			<tr>
-				<th>Desserts</th><th></th>
-			</tr>					
-			<tr>
-				<td></td><td></td>
-			</tr>
-			<tr>
-				<td></td><td></td>
-			</tr>
-			<tr>
-				<td></td><td></td>
-			</tr>
-			<tr>
-				<td></td><td></td>
-			</tr>
-			<tr>
-				<td></td><td></td>
-			</tr>
-			<tr>
-				<td></td><td></td>
-			</tr>
-		</table>		
-	</div>
+<body id="body">
+<div class="container">
+ <!-- Fixed navbar -->
+   <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">SYSTEMS</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="active"><a href="index.html">Home</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="history.html">History</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="events.html">What's on</a></li>
+                <li><a href="index.html#reviews">Reviews</a></li>                
+                <li><a href="index.html#location">Find us</a></li>
+                <li><a href="index.html#location">Contact us</a></li>
+                <li><a href="index.html#vacancies">Vacancies</a></li>
+                <li><a href="form.html">Reserve a table</a></li>
+              </ul>
+            </li>            
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Our menus <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="menu.html">Food</a></li>
+                <li><a href="menu.pdf">Download menu</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="gallery.html">Picture gallery</a></li>
+              </ul>
+            </li>            
+            <li class="background"><select style="margin: 15px" id="select1" onchange="select1change()">
+                    <option value="images/donut.jpg">Donut</option>
+                    <option value="images/chocolate-bread.jpg">Bread</option>
+                    <option value="images/soup.jpg">Soup</option>
+                </select>
+            </li>          
+        </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+<!--
+    <nav class="navbar navbar-inverse navbar-fixed-top" role='navigation'>
+        <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle " data-toggle="collapse" data-target="#navbar-collapse">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class='icon-bar'></span>
+                  <span class='icon-bar'></span>
+                </button>
+                <a class="navbar-brand" href="#gallery">Three Michelin stars. One great passion for food.</a>
+            </div>
+            <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                  <li><a href="#menu">Our menu</a></li>
+                  <li><a href="#about">About us</a></li>
+                  <li><a href="#reviews">What they say</a></li>
+                  <li><a href="#contactus">Get in touch</a></li>
+                  <li><a href="#location">Where we are</a></li>
+                  <li><select style="margin: 15px" id="select1" onchange="select1change()">
+                          <option value="images/donut.jpg">Donut</option>
+                          <option value="images/chocolate-bread.jpg">Bread</option>
+                          <option value="images/soup.jpg">Soup</option>
+                        </select></li>
+                </ul>
+            </div>
+          </div>
+    </nav>
+  -->
+  <!--/start title div-->
+  <div class="row">
+    <div class="website-title">
+      <h1 class="bungee">SYSTEMS <br /><small>Aiming for great.</small></h1>      
+    </div>
+  </div>
+
+ <!-- BEGINNING AGA'S MENU --> 
+
+  <div class="">
+    <div class="container text-center">
+      <div class="row">
+          <div class="col-md-4 white">
+            <a href="main-menu.html"><h4>Drinks</h4>
+              <img style="max-width:85%;border-radius:20px;" src="images/coffee.jpg">
+            </a>
+          </div>
+          <div class="col-md-4 white">
+            <a href="http://www.garfunkels.co.uk/sites/default/files/menus/24441-Garfs-Breakfast%20Menu-03-16_WEB.pdf">
+              <h4>Breakfast</h4>
+              <h5>Served from 9am to 12am every day</h5>
+              <img style="max-width:90%;border-radius:20px" src="images/breakfast1.jpg" width="650" height="260" alt="" />
+            </a>
+          </div>
+          <div class="col-md-4 white">
+            <a href="http://www.garfunkels.co.uk/sites/default/files/menus/Lunch%20Hotdog%20Menu.pdf">
+              <h4>Lunch</h4>
+              <h5>Served from 12am every day</h5>
+              <img style="max-width:85%;border-radius:20px;" src="images/lunch.jpg">
+            </a>
+          </div>
+      </div> 
+    </div>
+  </div>
+
+  <div class="">
+    <div class="container text-center">
+      <div class="row">
+        <div class="col-md-4 white">
+          <a href="/menus/main-menu">
+            <h4>Main menu</h4>
+            <h5>Served from 12am every day</h5>
+            <img style="max-width:90%;border-radius:20px;" src="images/maindish.jpg" width="650" height="300" alt="" />
+          </a>
+        </div>
+        <div class="col-md-4 white">
+          <a href="/menus/maindish">
+            <h4>Dessert</h4>
+            <img style="max-width:90%;border-radius:20px;" src="images/dessert.jpg" width="500" height="320" alt="" />
+          </a>
+        </div>
+        <div class="col-md-4 white">
+          <a href="/menus/main-menu">
+            <h4>Wine list</h4>
+            <img class="img-responsive" style="max-width:85%;border-radius:20px;" src="images/wine.jpg" width="660" height="260" alt="" />
+          </a>
+        </div>
+      </div> 
+    </div>
+  </div>
+
+<!--very last div closing tag here-->
+</div>
+<!--/footer-->
+   <footer class="footer">
+      <div class="container">
+        <p class="text-muted">
+          <span style="font-variant: small-caps">&copy; Copyright 2016 SYSTEMS. All rights reserved.</span>
+        </p>
+      </div>
+    </footer>
+    <!-- <div class="container text-right"> 
+      <div class="row"> -->
+
+      <!--</div>
+    </div>-->
+<!--
+  <footer class="footer" id="footer">
+    <div class="container">
+      <p class="text-muted">
+          <button class='btn-twitter btn btn-lg'>Twitter</button>
+              <button class='btn-facebook btn btn-lg'>Facebook</button>
+              <button class='btn-pinterest btn btn-lg'>Pinterest</button> 
+              <span style="font-variant: small-caps">SYSTEMS &#8228; Gower Street &#8228; London &#8228; WC1E 4BT</span>
+          </p>
+    </div>
+
+  </footer>
+  -->
+<!--end footer-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="http://getbootstrap.com/assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="js/bootstrap.min.js"></script>
 </body>
 </html>
