@@ -1,144 +1,164 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Challenge Website: CFG @ Twitter, Autumn 2016</title>
+  <title>SYSTEMS - always aim for better</title>
   <link href='css/bootstrap.css' rel='stylesheet'>
+  <link href='css/bootstrap.min.css' rel='stylesheet'>
   <link href='css/main.css' rel='stylesheet'>
   <link href='http://fonts.googleapis.com/css?family=Share+Tech+Mono' rel='stylesheet' type='text/css'>
-    <script src="javascript/javascript.js">
-</script>
+  <script src="javascript/javascript.js"></script>
 </head>
 <body id="body">
 <div class="container">
-
-
-	<nav class="navbar navbar-inverse navbar-fixed-top" role='navigation'>
+ <!-- Fixed navbar -->
+    <nav class="navbar navbar-default navbar-fixed-top">
       <div class="container">
         <div class="navbar-header">
-          <button type="button" class="navbar-toggle " data-toggle="collapse" data-target="#navbar-collapse">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
-            <span class='icon-bar'></span>
-            <span class='icon-bar'></span>
+            <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">Taking care of the products.</a>
+          <a class="navbar-brand" href="#">SYSTEMS</a>
         </div>
-
-        <div class="collapse navbar-collapse">
+        <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav navbar-right">
-          	<li><a href="#artists">Our Artists</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contactus">Contact Us</a></li>
-            <div class="float"> <select id="select1" onchange="select1change()">
-                  <option value="images/romeo-juliet1.png">Romeo</option>
-                  <option value="images/vote.jpg">Vote</option>
-                  <option value="images/escher-relativity.jpg">Escher</option>
-                  </select></div>
-          </ul>
-        </div>
-          <!--/.nav-collapse -->
+            <li class="active"><a href="#">Home</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="history.html">History</a></li>
+                <li><a href="history.html#chefs">The chefs</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="index.html#whatson">What's on</a></li>
+                <li><a href="index.html#reviews">Reviews</a></li>                
+                <li><a href="index.html#location">Find us</a></li>
+                <li><a href="index.html#location">Contact us</a></li>
+                <li><a href="index.html#vacancies">Vacancies</a></li>
+                <li><a href="index.html#reservation">Reserve a table</a></li>
+              </ul>
+            </li>            
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Our menus <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="menu.html">Food</a></li>
+                <li><a href="drinksmenu.html">Drinks</a></li>
+                <li><a href="menu.pdf">Download menu</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="gallery.html">Picture gallery</a></li>
+              </ul>
+            </li>            
+            <li class="background"><select style="margin: 15px" id="select1" onchange="select1change()">
+                    <option value="images/donut.jpg">Donut</option>
+                    <option value="images/chocolate-bread.jpg">Bread</option>
+                    <option value="images/soup.jpg">Soup</option>
+                </select>
+            </li>          
+        </ul>
+        </div><!--/.nav-collapse -->
       </div>
-	</nav>
-
-
-
-
-<div class="row">
-	<div class="website-title">
-		<h1 class="bungee">Colourless green ideas sleep furiously...<br />
-      <small>The greatest challenge.</small>
-    </h1>
-    <form role='form' class='form-inline'>
-          <div class="form-group">
-          <label for="email">Newsletter</label>
-          <input type="text" class='form-control' name="email" placeholder="Enter your email" >
-          <button type="submit" class='btn btn-success'>Send</button>
+    </nav>
+<!--
+    <nav class="navbar navbar-inverse navbar-fixed-top" role='navigation'>
+        <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle " data-toggle="collapse" data-target="#navbar-collapse">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class='icon-bar'></span>
+                  <span class='icon-bar'></span>
+                </button>
+                <a class="navbar-brand" href="#gallery">Three Michelin stars. One great passion for food.</a>
+            </div>
+            <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                  <li><a href="#menu">Our menu</a></li>
+                  <li><a href="#about">About us</a></li>
+                  <li><a href="#reviews">What they say</a></li>
+                  <li><a href="#contactus">Get in touch</a></li>
+                  <li><a href="#location">Where we are</a></li>
+                  <li><select style="margin: 15px" id="select1" onchange="select1change()">
+                          <option value="images/donut.jpg">Donut</option>
+                          <option value="images/chocolate-bread.jpg">Bread</option>
+                          <option value="images/soup.jpg">Soup</option>
+                        </select></li>
+                </ul>
+            </div>
           </div>
-    </form>
-	</div>
-</div>
-
-
-<div class="ourartists">
-<div class="container text-center">
-<div class="row">
-	<div class="col-md-4 white"><img style="max-width: 90%"" src="images/escher-relativity.jpg"></div>
-	<div class="col-md-4 white"><blockquote>"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
-  <footer>Mark Huckboots, CEO Imagine Dragons</footer></blockquote></div>
-  <div class="col-md-4 white"><img style="max-width: 90%"" src="images/escher-relativity.jpg"></div>
-  </div>
-<div class="row">
-	<div class="col-md-4 white"><iframe width="90%" height="90%" src="https://www.youtube.com/embed/MlbxRBfGAr0" frameborder="0" allowfullscreen></iframe></div>
-  <div class="col-md-4 white"><img style="max-width: 90%"" src="images/escher-relativity.jpg"></div>	
-  <div class="col-md-4 white"><blockquote>"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.<footer>Morgana LeFay, Man Booker Prize 2014 Finalist</footer></blockquote></div>
-</div>
-</div>
-</div>
-
-
-
-<div id="about">
-<div class="container text-center">
-<h2>Who We Are</h2>
-<div class="row">
-<div class="col-md-4 white">
- <div>
-      <img src='images/person.jpg' class='img-circle'>
-      <blockquote>
-      <p>These sandwiches are the best I've ever tasted, for sure. I now eat them every day - breakfast, lunch and dinner.</p>
-      <small>Mr Smith, Professional sandwich taster</small>
-      </blockquote>
- </div>
-</div>
-<div class="col-md-4 white">
- <div>
-      <img src='images/person.jpg' class='img-circle'>
-      <blockquote>
-      <p>My team are always far more productive after we order from Sam's. 40% more productive, in fact.</p>
-      <small>Miss McAdam, CEO Workplace Analytics</small>
-      </blockquote>
+    </nav>
+  -->
+  <!--/start title div-->
+  <div class="row">
+    <div class="website-title">
+      <h1 class="bungee">SYSTEMS <br /><small>Aiming for great.</small></h1>      
     </div>
-</div>
-<div class="col-md-4 white">
-    <div>
-      <img src='images/person.jpg' class='img-circle'>
-      <blockquote>
-      <p>We switched to Sam's Sarnies and won our first government contract the next day. Coincidence? I think not!</p>
-      </blockquote>
-    </div> 
-</div>
-</div>
-</div>
-</div>
+  </div>
 
+  <div class="">
+    <div class="container text-center">
+      <div class="row">
+        <div class="col-md-8 black2">
+          <h1 style="color:#DAA520">Piano Sing Along</h1>
+          <h2 style="color:#F0DD9C">Pianist Bazz Norton and his 160 year-old Collard & Collard grand piano invite you to sample the delights of Piano Kensington bar and restaurant. With a variety of fine wines, and delicious food on offer you are sure to have a thoroughly enjoyable evening in their company. Come along, sing along and have a truly memorable and fun night in Kensington.</h2>
+        </div>
+        <div class="col-md-4 black">
+          <img style="float:left;width:330px;height:350px" src="images/piano.jpg">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4 silver">
+          <img style="float:left;width:330px;height:300px" src="images/truffle.jpg">
+        </div>
+        <div class="col-md-8 silver2">
+          <h1>White Truffle Season</h1>
+          <h2 style="color:#CD853F">Arguably the best season for producing the most delicious ingredients, Autumn is here and white truffles are back! We are celebrating all things truffle from 1st – 30th November, with a Jerusalem artichoke and white truffle risotto on the menu, as well as the option to add shaved truffles on every  dish from the Restaurant’s ALa Carte menu…how can you say no to that?</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-8 gold">
+          <h1 style="color:#E41414">Festive Feasting</h1>
+          <h2 style="color:brown">This Christmas we’re bringing our guests a touch of festive magic, with D&D London’s Fairytales in the City celebration. As part of this our Head Chef, Jeremy Trehout has created a delicious bespoke menu for you to enjoy. Please note our Festive Menu will be available from 14th November until 24th December. The menus are available for up to 10 guests. Full prepayment will be taken to secure the booking with a 48 hour cancellation pol.</h2>
+        </div>
+        <div class="col-md-4 gold">
+          <img style="float:center;width:350px;height:370px;margin: 0 auto" src="images/festive.jpg">
+        </div>
+      </div>
+    </div>
+  </div>
 
-<div id="contactus">
-<div class="container text-center">
-<div class="row">
-<div class ="col-md-12 white footer">
-<blockquote>"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</blockquote>
+<!--/end-->
 </div>
-</div>
-</div>
-</div>
+<!--/footer-->
+   <footer class="footer">
+      <div class="container">
+        <p class="text-muted">
+          <span style="font-variant: small-caps">&copy; Copyright 2016 SYSTEMS. All rights reserved.</span>
+        </p>
+      </div>
+    </footer>
+    <!-- <div class="container text-right"> 
+      <div class="row"> -->
 
+      <!--</div>
+    </div>-->
+<!--
+  <footer class="footer" id="footer">
+    <div class="container">
+      <p class="text-muted">
+          <button class='btn-twitter btn btn-lg'>Twitter</button>
+              <button class='btn-facebook btn btn-lg'>Facebook</button>
+              <button class='btn-pinterest btn btn-lg'>Pinterest</button> 
+              <span style="font-variant: small-caps">SYSTEMS &#8228; Gower Street &#8228; London &#8228; WC1E 4BT</span>
+          </p>
+    </div>
 
-<div id="footer">
-<div class="container text-right">
-<div class="row">
-<div class ="col-md-12 white footer" id='social-buttons'>
-      <button class='btn-twitter btn btn-lg'>Twitter</button>
-      <button class='btn-facebook btn btn-lg'>Facebook</button>
-      <button class='btn-pinterest btn btn-lg'>Pinterest</button> 
-         <span style="font-variant: small-caps">Colourless Green &#8228; 116 Gower Street &#8228; London &#8228; WC1E 4LE</span>
-</div>
-</div>
-</div>
-</div>
-
-
-
-</div>
+  </footer>
+  -->
+<!--end footer-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="http://getbootstrap.com/assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="js/bootstrap.min.js"></script>
 </body>
 </html>

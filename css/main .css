@@ -1,0 +1,51 @@
+
+#body {
+	background-image: url("../images/donut.jpg");
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+.row {
+	padding: 15px;
+	display: flex;
+}
+
+.website-title {
+	padding: 80px;
+}
+
+.bungee {
+	font-family: 'Share Tech Mono', monospace;
+	font-weight: bold;
+}
+
+.white {
+	background-color: white;
+	margin: 2px;
+	flex: 1;
+	border-style: double;
+	padding: 1em;
+	max-height: 400px;
+	overflow-y: scroll;
+}
+
+#footer {
+	background-color: #101010;
+	color: #9d9d9d;
+	padding: 10px;
+	text-align: right;
+}
+
+.google-maps {
+    position: relative;
+    padding-bottom: 75%;
+    height: 0;
+    overflow: hidden;
+}
+.google-maps iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
+}

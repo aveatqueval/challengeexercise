@@ -1,0 +1,71 @@
+
+#body {
+	background-image: url("../images/romeo-juliet1.png");
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+.row {
+	padding: 15px;
+	display: flex;
+}
+
+.website-title {
+	padding: 40px;
+}
+
+.bungee {
+	font-size: 16px;
+	font-family: 'Share Tech Mono', monospace;
+	font-weight: bold;
+	padding: 10px; 
+	margin-top: 10px;
+}
+
+.col-md-4 {
+	flex: 1;
+	border-style: double;
+	padding: 1em;
+}
+
+
+
+#overlay {
+    display: block; 
+    width: 100%;
+    heigth: 100%;
+}
+
+
+
+.white {
+	background-color: white;
+	margin: 2px;
+}
+
+.footer {
+	padding: 1em;
+	border-style: double;
+}
+
+.float {
+	margin: 1px;
+}
+
+.navbar {
+background-image: url ('http://giphy.com/gifs/RkeoaAJetO29a/html5');
+
+
+}
+
+nav {background:rgba(189, 236, 232, 0.1);float:left;}
+nav ul {text-align:center;}
+nav ul li {float:left;display:inline;}
+nav ul li:hover {background:#E6E6E6;}
+nav ul li a {display:block;padding:15px 25px;color:#444;}
+nav ul li ul {position:absolute;width:150px;background:#FFF;}
+nav ul li ul li {width:100px;}
+nav ul li ul li a {display:block;padding:15px 10px;color:#444;}
+nav ul li ul li:hover a {background:#F7F7F7;}
+nav ul li ul.fallback {display:none;}
+nav ul li:hover ul.fallback {display:block;}
