@@ -1,11 +1,23 @@
-function select1change() {
-  document.getElementById("body").style.backgroundImage =
-    "url("+document.getElementById("select1").value+")";
+
+
+var slideIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none"; 
+    }
+    slideIndex++;
+    if (slideIndex > x.length) {slideIndex = 1} 
+    x[slideIndex-1].style.display = "block"; 
+    setTimeout(carousel, 2000); // Change image every 2 seconds
 }
 
 
-<script>
-document.getElementById('links').onclick = function (event) {
+
+document.getElementById('links').onclick = function (hide) {
     event = event || window.event;
     var target = event.target || event.srcElement,
         link = target.src ? target.parentNode : target,
@@ -13,9 +25,10 @@ document.getElementById('links').onclick = function (event) {
         links = this.getElementsByTagName('a');
     blueimp.Gallery(links, options);
 };
-</script>
 
-<script>
+
+
+
 blueimp.Gallery(
     document.getElementById('links').getElementsByTagName('a'),
     {
@@ -23,5 +36,9 @@ blueimp.Gallery(
         carousel: true
     }
 );
-</script>
 
+
+
+
+
+    

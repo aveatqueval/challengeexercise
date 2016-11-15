@@ -32,6 +32,7 @@ html {
 	padding: 1em;
 	max-height: 400px;
 	overflow-y: scroll;
+
 }
 
 .address {
@@ -64,18 +65,31 @@ html {
 
 .black {
 	background-color: black;
-	margin: 2px;
+	margin: 2px; 
+
 }
 
+.ourstory {padding: 15px;
+text-align: justify;
 
-.white {
-	background-color: white;
-	margin: 2px;
+}
+
+#footer {
+	background-color: #101010;
+	color: #9d9d9d;
+	padding: 10px;
+	text-align: right;
 }
 
 .silver {
 	background-color: #EBEBF5;
 	margin: 2px;
+
+.google-maps {
+    position: relative;
+    padding-bottom: 75%;
+    height: 0;
+    overflow: hidden;
 }
 
 
@@ -124,4 +138,12 @@ h5 {
 	background-color: transparent;
 	font-size: 30px;
 
+
+.google-maps iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
 }
+

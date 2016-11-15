@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -7,8 +8,9 @@
   <link href='css/main.css' rel='stylesheet'>
     <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="http://blueimp.github.io/Gallery/css/blueimp-gallery.min.css">
-    <link rel="stylesheet" href="css/bootstrap-image-gallery.min.css">
+    <script src="blueimp-Bootstrap-Image-Gallery-78660b4/js/bootstrap-image-gallery.min.js"</script>
   <link href='http://fonts.googleapis.com/css?family=Share+Tech+Mono' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="css/blueimp-gallery.min.css">
   <script src="javascript/javascript.js"></script>
 </head>
 <body id="body">
@@ -95,29 +97,27 @@
 
 
     <!--/start title div-->
-    <div class="row">
-        <div class="website-title">
-            <h1 class="bungee">SYSTEMS <br /><small>Aiming for great.</small></h1>
-            <form role='form' class='form-inline'>
-                <div class="form-group">
-                    <label for="email">Newsletter</label>
-                    <input type="text" class='form-control' name="email" placeholder="Enter your email" >
-                    <button type="submit" class='btn btn-success'>Send</button>
-                </div>
-            </form>
-        </div>
-    </div>
+
 	<!-- The Bootstrap Image Gallery lightbox, should be a child element of the document body -->
+    <div class="container containerpicture">
 <div id="blueimp-gallery" class="blueimp-gallery">
     <!-- The container for the modal slides -->
     <div class="slides"></div>
     <!-- Controls for the borderless lightbox -->
-    <h3 class="title">Gallery</h3>
+    <h3 class="titlepic">Gallery</h3>
     <a class="prev">‹</a>
     <a class="next">›</a>
     <a class="close">×</a>
     <a class="play-pause"></a>
     <ol class="indicator"></ol>
+</div>
+
+<style>
+.containerpicture {margin-top: 100px;
+    
+}
+</style>
+
     <!-- The modal dialog, which will be used to wrap the lightbox content -->
     <div class="modal fade">
         <div class="modal-dialog">
@@ -141,28 +141,35 @@
         </div>
     </div>
 </div>
+
 <!--actual gallery start-->
 
 <div id="links">
-    <div class="row">
-        <div class="col-md-4 white">
-    <a href="images/tomatoes-neat.jpg" title="Salmon" data-gallery>
-        <img src="images/tomatoes-neat.jpg" alt="Salmon">
-    </a>
-        </div>
-        <div class="col-md-4 white">
-    <a href="images/tomatoes-neat.jpg" title="Aubergine" data-gallery>
-        <img src="images/tomatoes-neat.jpg" alt="Aubergine">
-    </a>
-        </div>
-        <div class="col-md-4 white">
-    <a href="images/tomatoes-neat.jpg" title="Steak" data-gallery>
-    	<img src="images/tomatoes-neat.jpg" alt="steak">
-    </a>	
-        </div>
-    </div>
-</div>
 
+    <a href="gallery pictures/3723.jpg"  title="Salmon" data-gallery>
+    <img src="gallery pictures/3723.jpg" img height=300 img width=400 alt="Salmon" img style="padding:15px">
+    </a>
+
+        
+        
+    <a href="gallery pictures/eggplant620.jpg" title="Aubergine" data-gallery>
+        <img src="gallery pictures/eggplant620.jpg" img height=300 img width=400 alt="Aubergine" img style="padding:15px">
+
+    </a>
+        
+        
+    <a href="gallery pictures/hawksmoor-steak.jpg" title="Steak" data-gallery>
+    	<img src="gallery pictures/hawksmoor-steak.jpg" img height=300 img width=400 alt="steak" img style="padding:15px">
+    </a>	
+
+    <a href="gallery pictures/cactus.jpg" title="Burrito" data gallery>
+        <img src="gallery pictures/cactus.jpg" img height=300 img width=400 alt="Burrito" img style="padding:15px">
+        </div>
+
+
+ <script src="//blueimp.github.io/Gallery/js/jquery.blueimp-gallery.min.js"></script>
+      <script src="/js/bs_gallery/blueimp-gallery.min.js"></script>
+ 
 
 <!--/end-->
 </div>
@@ -199,9 +206,14 @@
 <!--end footer-->
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <script src="http://blueimp.github.io/Gallery/js/jquery.blueimp-gallery.min.js"></script>
-<script src="js/bootstrap-image-gallery.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="http://getbootstrap.com/assets/js/vendor/jquery.min.js"><\/script>')</script>
 <script src="js/bootstrap.min.js"></script>
 </body>
 </html>
+
+
+
+</body>
+
+
