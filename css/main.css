@@ -138,6 +138,7 @@ h5 {
 	background-color: transparent;
 	font-size: 30px;
 
+<<<<<<< HEAD
 
 .google-maps iframe {
     position: absolute;
@@ -145,5 +146,39 @@ h5 {
     left: 0;
     width: 100% !important;
     height: 100% !important;
+=======
+}
+
+ h6 {
+ 	color: rgba(1, 2, 3, 0.8);
+    font-family: verdana;
+    font-size: 50px;
+    border-bottom: 1px solid;
+}
+
+.bigfont {
+	color: rgba(1, 2, 3, 0.8);
+    font-family: verdana;
+    font-size: 50px;
+    border-bottom: 1px solid;
+}
+ 
+.forkknife {
+	background: url('http://molotilo.com/wp-content/uploads/2016/08/restaurant-table-set.jpg');
+
+}
+
+.font-verdana {
+	font-family: verdana;
+	font-size: 15px;
+}
+
+  .sasha {
+    color: rgba(1,2, 3, 0.8);
+}
+
+  .btn-sasha {
+  	margin-top: 25px;
+>>>>>>> origin/master
 }
 
