@@ -98,12 +98,6 @@ color: white;
 .silver {
 	background-color: #EBEBF5;
 	margin: 2px;
-
-.google-maps {
-    position: relative;
-    padding-bottom: 75%;
-    height: 0;
-    overflow: hidden;
 }
 
 
@@ -131,12 +125,14 @@ color: white;
     height: 0;
     overflow: hidden;
 }
+
 .google-maps iframe {
     position: absolute;
     top: 0;
     left: 0;
     width: 100% !important;
     height: 100% !important;
+
 }
 
 h4 {
@@ -151,17 +147,6 @@ h5 {
 	font-family: 'Monotype corsiva';
 	background-color: transparent;
 	font-size: 30px;
-
-
-
-.google-maps iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100% !important;
-    height: 100% !important;
-
-}
 
  h6 {
  	color: rgba(1, 2, 3, 0.8);
@@ -192,7 +177,6 @@ h5 {
 
 .btn-sasha {
   	margin-top: 25px;
-
 }
 
 
